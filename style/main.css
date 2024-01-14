@@ -1,0 +1,192 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+/* Start Global Rules */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: var(--Soft-Magenta);
+  color: #fff;
+}
+body {
+  background-color: var(--Violet);
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  font-size: 15px;
+  position: relative;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start The Design */
+header {
+  height: 70px;
+  padding: 25px 0;
+}
+section {
+  height: calc(100vh - (70px + 70px));
+}
+section .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+}
+@media (max-width: 767px) {
+  section .container {
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+  }
+  section .container img {
+    width: 350px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px ) {
+  section .container {
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+  }
+  section .container img {
+    width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  section .container img {
+    width: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  section .container img {
+    width: 650px;
+  }
+}
+section .container .text {
+  line-height: 1.5;
+}
+section .container .text h1 {
+  color: #fff;
+  font-size: 40px;
+}
+section .container .text p {
+  font-size: 20px;
+  color: #ccc;
+}
+@media (max-width: 1199px) {
+  section .container .text h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  section .container .text h1 {
+    font-size: 30px;
+  }
+}
+section .container .text > a {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  background: var(--Soft-Magenta);
+  color: var(--Violet);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+section .container .text > a:hover {
+  background-color: hsl(300, 69%, 74%);
+}
+@media (max-width: 991px ) {
+  section .container .text > a {
+    margin: 50px auto 0;
+  }
+}
+@media (max-width: 767px) {
+  section .container .text > a {
+    background-color: #fff;
+  }
+}
+footer .container {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container p {
+  font-size: 20px;
+  color: #fff;
+}
+footer .container p a {
+  color: var(--Soft-Magenta);
+  margin-left: 5px;
+  font-weight: bold;
+}
+footer .container i {
+  color: #fff;
+  font-size: 25px;
+  margin-right: 5px;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+footer .container i:hover {
+  border-color: var(--Soft-Magenta);
+  color: var(--Soft-Magenta);
+}
+@media (max-width: 767px) {
+  section {
+    margin-bottom: 40px;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* End The Design */
+/* Start Responsive */
+/* End Responsive */
